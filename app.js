@@ -12,6 +12,7 @@ const compression = require('compression');
 const helmet = require('helmet');
 
 const app = express();
+dotenv.config({ path: '.env' })
 
 const mongoose = require('mongoose');
 const dev_db_url = 'mongodb+srv://dwstudent:dw12345@cluster0-cydfx.azure.mongodb.net/local_library?retryWrites=true&w=majority';
