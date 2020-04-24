@@ -14,7 +14,7 @@ const app = express();
 dotenv.config({ path: '.env' });
 
 const mongoose = require('mongoose');
-const dev_db_url = process.env.ATLAS_URI;
+const dev_db_url = "mongodb+srv://dwstudent:dw12345@cluster0-cydfx.azure.mongodb.net/local_library?retryWrites=true&w=majority";
 const mongoDB = process.env.MONGODB_URI || dev_db_url;
 mongoose.connect(mongoDB, { useNewUrlParser: true, useUnifiedTopology: true  });
 mongoose.Promise = global.Promise;
